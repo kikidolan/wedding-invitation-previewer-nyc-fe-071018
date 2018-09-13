@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Wedding Invitations</title>
+    <link rel="stylesheet" href="index.css">
+    
+  </head>
+
+<body>
+  <h1>Let's get you hitched.</h1>
+  <p class=subheader> Weddings are stressful. Take our word for it - literally noone cares about your invitation style. So skip the search, choose one of ours, and save some trees!</p>
+  
+  <!--tabs--> 
+  <div class="tab">
+    <button class="tablinks" onclick="openStyle(event, 'Basic')">Basic</button>
+    <button class="tablinks" onclick="openStyle(event, 'Fancy')">Fancy</button>
+    <button class="tablinks" onclick="openCity(event, 'Wowza')">Wowza</button>
+  </div>
+
+<!--tab content-->
+<div class="Grid">
+  <div id="Style" class="tabcontent">
+  <h3 class="styleName"></h3>
+  <p class="tabsubs"></p>
+    <form>
+      First name:<br>
+      <input type="text" name="firstname" id="firstname"><br><br>
+      Second name:<br>
+      <input type="text" name="secondname" id="secondname"><br><br>
+      Last Name: <br>
+      <input type="text" name="lastname" id="lastname"><br><br>
+      Date: <br>
+      <input type="date" name="date" id="date"><br><br>
+      Wedding Location: <br>
+      <input type="Location" name="location" id="location"><br><br>
+    </form>
+    <!--Image for customizing here too? -->
+  </div>
+  <div id="Invitation">
+    <div id="initials"></div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div>You are cordially invited to the wedding of</div>
+    <br>
+    <div id="firstName"></div>
+    <br>
+    <div id="secondName"></div>
+    <br>
+    <div id="lastName"></div>
+    <br>
+    <div id="date"></div>
+    <br>
+    <div id="location"></div>
+  </div>
+</div>
+
+<script src="index.js"></script>
+</body>
+</html>
